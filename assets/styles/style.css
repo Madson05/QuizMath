@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+#titulo{
+    color: #0c1fc9ea;
+    font-family: 'Delius', cursive;
+    font-size: 90px;
+    text-shadow: 5px 5px rgba(69, 122, 236, 0.534);
+    margin-bottom: -50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://img.freepik.com/fotos-gratis/whiteboard-com-formulas_1160-869.jpg?w=740&t=st=1678908260~exp=1678908860~hmac=d15a0f82623e796f4ffcd0a02752a5b95aaaf182a36bb8892594ee6500ca7af4);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 90px;
+}
+
+button{
+    width: 300px;
+    height: 120px;
+    background-color: #04347cbe;
+    border: transparent;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-family: 'Delius', cursive;
+    font-size:  40px;
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px #D9D9D9;
+}
+
+@media screen and (max-width: 500px){
+    
+    #titulo{
+        font-size: 80px;
+    }
+
+    .bloco{
+        height: 20px;
+        width: 40%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        height: 90px;
+        width: 200px;
+        font-size: 25px;
+        margin-left: 10px;
+        box-shadow: 8px 8px #D9D9D9;
+    }
+
+    .opcoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
