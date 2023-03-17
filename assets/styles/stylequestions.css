@@ -19,16 +19,8 @@ body{
     justify-content: center;
     font-family: 'Delius', cursive;
 }
-#nivel{
-    height: 40px;
-    width: 100px;
-    text-align: center;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 0.1px solid rgb(24, 155, 231);
-    background-color: rgb(14, 174, 196);
-}
-#pontuacao{
+
+.pontuacao_nivel div{
     height: 40px;
     width: 100px;
     text-align: center;

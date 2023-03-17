@@ -208,11 +208,12 @@ const listaDeQuestoes = [
 let questaoEsc;
 let listLevel;
 let level = 1;
+let erros = 0;
 let pontos = 0;
 let acertos = 0;
 let classAlternativas = document.getElementsByClassName("alternativa");
 
-function selectQuestions(){
+function selectQuestions() {
   listLevel = listaDeQuestoes.filter((question) => question.nivel === level);
 }
 function RandomQuestion() {
@@ -223,6 +224,7 @@ const completeData = () => {
   let areaImagem = document.getElementById("imagem");
   let areaNivel = document.getElementById("nivel");
   let areaPontos = document.getElementById("pontuacao");
+  let areaErros = document.getElementById("erros");
   let areaEnunciado = document.getElementById("enunciado");
 
   areaImagem.innerHTML = "";
@@ -231,7 +233,8 @@ const completeData = () => {
 
   areaEnunciado.innerHTML = `${questaoEsc.enunciado}`;
   areaNivel.innerHTML = `Nivel: ${level}`;
-  areaPontos.innerHTML = `Pontuação: ${pontos} pontos`;
+  areaPontos.innerHTML = `Pontuação: ${pontos}`;
+  areaErros.innerHTML = `Erros: ${erros}`;
   if (questaoEsc.imagem != null) {
     areaImagem.innerHTML = `<img src="${questaoEsc.imagem}" alt="">`;
   }
@@ -250,41 +253,49 @@ function checkAnswer(alternativa) {
   if (questaoEsc.resposta === alternativa) {
     classAlternativas[alternativa - 1].style.backgroundColor = "green";
     for (let i = 0; i < classAlternativas.length; i++) {
-        if (classAlternativas[i].disabled == false) {
-          classAlternativas[i].disabled = true;
-        } else {
-          classAlternativas[i].disabled = false;
-        }
-      
+      if (classAlternativas[i].disabled == false) {
+        classAlternativas[i].disabled = true;
+      } else {
+        classAlternativas[i].disabled = false;
+      }
     }
 
-    pontos +=10;
+    pontos += 10;
+
+    listLevel = listLevel.filter((quest) => quest !== questaoEsc);
+
+    console.log(listLevel);
   } else {
     classAlternativas[alternativa - 1].style.backgroundColor = "red";
-    for(let i =0; i<classAlternativas.length; i++){
-          if(classAlternativas[i].disabled==false){
-              classAlternativas[i].disabled = true
-          }
-          else{
-              classAlternativas[i].disabled = false
-          }
+    for (let i = 0; i < classAlternativas.length; i++) {
+      if (classAlternativas[i].disabled == false) {
+        classAlternativas[i].disabled = true;
+      } else {
+        classAlternativas[i].disabled = false;
       }
+    }
+    erros += 1;
   }
 
-  if(pontos>=30){
+  if (pontos >= 30) {
     pontos = 0;
-    level+=1;
-    selectQuestions()
+    erros = 0;
+    level += 1;
+    selectQuestions();
   }
 
-  if(level===4){
-    window.location.href = '../pages/regras.html';
+  if (erros >= 3) {
+    pontos = 0;
+    erros = 0;
   }
 
+  if (level === 4) {
+    window.location.href = "../pages/regras.html";
+  }
 
   setTimeout(() => {
     completeData();
   }, 2000);
 }
-selectQuestions()
+selectQuestions();
 completeData();
