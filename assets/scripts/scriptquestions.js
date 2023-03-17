@@ -236,7 +236,11 @@ const completeData = () => {
   areaPontos.innerHTML = `Pontuação: ${pontos}`;
   areaErros.innerHTML = `Erros: ${erros}`;
   if (questaoEsc.imagem != null) {
+    areaImagem.style.display = "block"
     areaImagem.innerHTML = `<img src="${questaoEsc.imagem}" alt="">`;
+  }else{
+    areaImagem.style.display = "none"
+    
   }
 
   console.log(questaoEsc);
