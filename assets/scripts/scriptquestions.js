@@ -238,13 +238,14 @@ function checkAnswer(alternativa) {
     erros = 0;
   }
 
-  if (pontos >= 100) {
-    window.location.href = "../pages/regras.html";
-  }
-
+  
   setTimeout(() => {
     completeData();
   }, 2000);
+  
+  if (pontos >= 100) {
+    window.location.href = "../pages/success.html";
+  }
 }
 selectQuestions();
 completeData();
