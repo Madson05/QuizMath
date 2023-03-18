@@ -73,14 +73,14 @@ const listaDeQuestoes = [
   },
 
   {
-    enunciado: "Qual fração é maior, 7/8 ou 4/6?",
+    enunciado: "Qual fração é menor, 7/8 ou 4/6?",
     alternativas: [
       "7/8",
       "4/6",
       "Não é possivel identificar a maior",
       "As duas frações são iguais",
     ],
-    resposta: 1,
+    resposta: 2,
     nivel: 1,
     imagem: null,
   },
@@ -124,7 +124,7 @@ const listaDeQuestoes = [
     alternativas: ["1/2", "2/4", "1/2", "4/2"],
     resposta: 1,
     nivel: 1,
-    imagem: "../images/fracao_14.png",
+    imagem: "../images/fracao_24.png",
   },
 
   {
@@ -141,7 +141,7 @@ const listaDeQuestoes = [
     resposta: 1,
     nivel: 1,
     imagem: null,
-  },  
+  },
   {
     enunciado: "Qual a forma reduzida das frações 6/48 e 5/8, respectivamente:",
     alternativas: ["5/8 e 1/8", "5/8 e 1/6", "1/8 e 5/8", "5/8 e 3/24"],
