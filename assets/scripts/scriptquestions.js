@@ -112,6 +112,108 @@ const listaDeQuestoes = [
     nivel: 1,
     imagem: null,
   },
+  // Questões sobre Decomposição Aditiva
+  {
+    enunciado:
+      "João encontrou um baú antigo com um código numérico de 325. Para abrir o baú, ele precisa escrever a decomposição aditiva correta desse número. Qual é a opção correta?",
+    alternativas: ["300 + 2 + 5", "300 + 20 + 5", "30 + 20 + 5", "3 + 2 + 5"],
+    resposta: 2,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Durante uma aula de arqueologia, Maria encontrou uma placa com o número 4.067. O professor pediu que ela escrevesse a decomposição aditiva desse número. Qual das opções abaixo está correta?",
+    alternativas: [
+      "4.000 + 60 + 7",
+      "4.000 + 600 + 70",
+      "4.000 + 600 + 7",
+      "4.000 + 60 + 70",
+    ],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Em uma gincana escolar, Pedro precisa representar o número 8.239 de forma decomposta para ganhar pontos. Qual das opções abaixo ele deve escolher?",
+    alternativas: [
+      "8.000 + 200 + 30 + 9",
+      "8.000 + 2.000 + 30 + 9",
+      "800 + 200 + 30 + 9",
+      "80 + 2 + 3 + 9",
+    ],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+
+  // Questões sobre Decomposição Multiplicativa
+  {
+    enunciado:
+      "Um robô precisa decifrar o código numérico 325 usando a decomposição multiplicativa. Qual é a forma correta dessa decomposição?",
+    alternativas: [
+      "3 × 100 + 2 × 10 + 5 × 1",
+      "30 × 10 + 2 × 5 + 5 × 1",
+      "3 × 10 + 2 × 10 + 5 × 1",
+      "300 × 1 + 20 × 1 + 5 × 1",
+    ],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Em uma competição de matemática, os participantes devem decompor o número 4.067 utilizando a multiplicação. Qual é a opção correta?",
+    alternativas: [
+      "4 × 1.000 + 6 × 10 + 7 × 1",
+      "4 × 1.000 + 60 × 10 + 7 × 1",
+      "4 × 100 + 6 × 10 + 7 × 1",
+      "4 × 1.000 + 6 × 100 + 7 × 10",
+    ],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Para solucionar um enigma, Luiza precisa decompor o número 8.239 de forma multiplicativa. Qual opção está correta?",
+    alternativas: [
+      "8 × 1.000 + 2 × 100 + 3 × 10 + 9 × 1",
+      "8 × 100 + 2 × 10 + 3 × 1 + 9 × 1",
+      "80 × 10 + 2 × 100 + 3 × 10 + 9 × 1",
+      "8 × 1.000 + 20 × 100 + 3 × 10 + 9 × 1",
+    ],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+
+  // Questões sobre Sucessor e Antecessor
+  {
+    enunciado:
+      "Lucas está subindo uma escada e percebe que está no degrau 499. Para chegar ao próximo degrau, qual será o número que ele encontrará?",
+    alternativas: ["498", "499", "500", "501"],
+    resposta: 3,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Durante um jogo de tabuleiro, Ana percebe que está na casa 700. Seu amigo estava na casa anterior. Qual era a casa onde ele estava?",
+    alternativas: ["698", "699", "700", "701"],
+    resposta: 2,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Um pássaro pousou no galho numerado 1.236. Esse galho fica entre dois outros galhos numerados. Quais são esses números?",
+    alternativas: ["1.233", "1.234", "1.236", "1.238"],
+    resposta: 2,
+    nivel: 1,
+    imagem: null,
+  },
 ];
 
 let questaoEsc;
