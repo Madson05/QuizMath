@@ -1,150 +1,113 @@
 const listaDeQuestoes = [
   {
-    enunciado: "Qual é a definição de uma fração?",
+    enunciado:
+      "Qual é o nome do sistema de numeração que utilizamos atualmente?",
     alternativas: [
-      "Um número inteiro.",
-      "Uma parte de um todo dividido em partes iguais.",
-      "Uma fração de um número inteiro.",
-      "Uma adição de dois números inteiros.",
-    ],
-    resposta: 2,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "Como uma fração pode ser representada graficamente?",
-    alternativas: [
-      "Por uma linha reta.",
-      "Por um círculo dividido em partes iguais.",
-      "Por um gráfico de barras",
-      "Por um gráfico de pizza",
-    ],
-    resposta: 2,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "O que representa o numerador em uma fração?",
-    alternativas: [
-      "A quantidade de partes em relação ao todo.",
-      "A quantidade que se pretende obter do todo.",
-      "A linha horizontal que separa o numerador e o denominador.",
-      "A linha vertical que separa o numerador e o denominador.",
-    ],
-    resposta: 2,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "O que representa o denominador em uma fração?",
-    alternativas: [
-      "A quantidade de partes que o todo foi dividido.",
-      "A parte que me interessa descobrir em relação ao todo.",
-      "A linha horizontal que separa o numerador e o denominador.",
-      "A linha vertical que separa o numerador e o denominador.",
-    ],
-    resposta: 1,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "Qual é a fração equivalente a 0,5?",
-    alternativas: ["1/2", "1/4", "2/5", "1/3"],
-    resposta: 1,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "Qual fração é maior, 3/4 ou 4/5?",
-    alternativas: [
-      "3/4",
-      "4/5",
-      "As duas frações são iguais",
-      "Não é possivel identificar a maior",
-    ],
-    resposta: 2,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "Qual fração é menor, 7/8 ou 4/6?",
-    alternativas: [
-      "7/8",
-      "4/6",
-      "Não é possivel identificar a maior",
-      "As duas frações são iguais",
-    ],
-    resposta: 2,
-    nivel: 1,
-    imagem: null,
-  },
-
-  {
-    enunciado: "Qual fração é maior, 2/8 ou 1/4?",
-    alternativas: [
-      "2/8",
-      "1/6",
-      "As duas são iguais.",
-      "Elas não são frações.",
+      "Sistema romano",
+      "Sistema maia",
+      "Sistema indo-arábico",
+      "Sistema babilônico",
+      "Sistema egípcio",
     ],
     resposta: 3,
     nivel: 1,
     imagem: null,
   },
-
   {
-    enunciado: "Qual o resultado da fração abaixo",
+    enunciado:
+      "Quantos símbolos (algarismos) são utilizados no sistema de numeração decimal?",
+    alternativas: ["8", "9", "10", "11", "12"],
+    resposta: 3,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Por que o sistema de numeração que utilizamos é chamado de decimal?",
     alternativas: [
-      "0",
-      "5",
-      "1/5",
-      "Isso não é uma fração. Isso é o fim da matemática",
+      "Porque foi criado há dez séculos",
+      "Porque utiliza dez símbolos diferentes",
+      "Porque agrupa os elementos de 10 em 10",
+      "Porque foi criado por dez matemáticos",
+      "Porque só pode representar números até 10",
+    ],
+    resposta: 3,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Qual é a função do algarismo 0 (zero) no sistema de numeração decimal?",
+    alternativas: [
+      "Representar o infinito",
+      "Indicar o início de um número",
+      "Separar a parte inteira da decimal",
+      "Indicar as ordens vazias",
+      "Multiplicar o valor dos outros algarismos",
     ],
     resposta: 4,
     nivel: 1,
-    imagem: "../images/fracao_50.png",
+    imagem: null,
   },
-
   {
-    enunciado: "Qual o resultado da fração abaixo?",
-    alternativas: ["0", "0,5", "4", "0,25"],
-    resposta: 4,
+    enunciado:
+      "O que significa dizer que os algarismos têm valor posicional no sistema decimal?",
+    alternativas: [
+      "Que cada algarismo só pode ser usado uma vez",
+      "Que os algarismos devem ser escritos em ordem crescente",
+      "Que um mesmo algarismo representa valores diferentes conforme sua posição",
+      "Que os algarismos maiores têm mais valor que os menores",
+      "Que a posição dos algarismos não importa",
+    ],
+    resposta: 3,
     nivel: 1,
-    imagem: "../images/fracao_14.png",
+    imagem: null,
   },
-
   {
-    enunciado: `Qual a forma reduzida da fração abaixo?`,
-    alternativas: ["1/2", "2/4", "1/2", "4/2"],
-    resposta: 1,
-    nivel: 1,
-    imagem: "../images/fracao_24.png",
-  },
-
-  {
-    enunciado: "Qual a forma reduzida da fração abaixo?",
-    alternativas: ["5/8", "1/4", "2/3", "5/6"],
-    resposta: 1,
-    nivel: 1,
-    imagem: "../images/fracao_58.png",
-  },
-
-  {
-    enunciado: "Qual a forma reduzida das frações 5/8 e 6/48, respectivamente:",
-    alternativas: ["5/8 e 1/8", "5/8 e 1/6", "1/8 e 5/8", "5/8 e 3/24"],
+    enunciado:
+      "Qual instrumento antigo de cálculo é mencionado no texto para representar números?",
+    alternativas: [
+      "Ábaco",
+      "Calculadora",
+      "Régua de cálculo",
+      "Computador",
+      "Soroban",
+    ],
     resposta: 1,
     nivel: 1,
     imagem: null,
   },
   {
-    enunciado: "Qual a forma reduzida das frações 6/48 e 5/8, respectivamente:",
-    alternativas: ["5/8 e 1/8", "5/8 e 1/6", "1/8 e 5/8", "5/8 e 3/24"],
+    enunciado:
+      "No sistema de numeração decimal, como são feitos os agrupamentos?",
+    alternativas: [
+      "De 5 em 5",
+      "De 2 em 2",
+      "De 10 em 10",
+      "De 100 em 100",
+      "De 20 em 20",
+    ],
+    resposta: 3,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado: "Qual é a origem do sistema de numeração indo-arábico?",
+    alternativas: [
+      "Foi criado na China e aperfeiçoado pelos romanos",
+      "Foi criado na Índia e aperfeiçoado pelos árabes",
+      "Foi criado na Grécia e aperfeiçoado pelos egípcios",
+      "Foi criado na Arábia e aperfeiçoado pelos indianos",
+      "Foi criado na Europa e aperfeiçoado pelos asiáticos",
+    ],
+    resposta: 2,
+    nivel: 1,
+    imagem: null,
+  },
+  {
+    enunciado:
+      "Qual é o nome dado aos símbolos utilizados para compor os números no sistema decimal?",
+    alternativas: ["Números", "Dígitos", "Algarismos", "Letras", "Caracteres"],
     resposta: 3,
     nivel: 1,
     imagem: null,
@@ -238,11 +201,10 @@ function checkAnswer(alternativa) {
     erros = 0;
   }
 
-  
   setTimeout(() => {
     completeData();
   }, 2000);
-  
+
   if (pontos >= 100) {
     window.location.href = "../pages/success.html";
   }
