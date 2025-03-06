@@ -26,12 +26,12 @@ const listaDeQuestoes = [
       "Por que o sistema de numeração que utilizamos é chamado de decimal?",
     alternativas: [
       "Porque foi criado há dez séculos",
-      "Porque utiliza dez símbolos diferentes",
-      "Porque agrupa os elementos de 10 em 10",
+      "Porque utiliza dez símbolos diferentes e agrupa os elementos de 10 em 10",
+      "Porque representa os numeros de 1 a 10",
       "Porque foi criado por dez matemáticos",
       "Porque só pode representar números até 10",
     ],
-    resposta: 3,
+    resposta: 2,
     nivel: 1,
     imagem: null,
   },
@@ -60,20 +60,6 @@ const listaDeQuestoes = [
       "Que a posição dos algarismos não importa",
     ],
     resposta: 3,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Qual instrumento antigo de cálculo é mencionado no texto para representar números?",
-    alternativas: [
-      "Ábaco",
-      "Calculadora",
-      "Régua de cálculo",
-      "Computador",
-      "Soroban",
-    ],
-    resposta: 1,
     nivel: 1,
     imagem: null,
   },
@@ -125,12 +111,12 @@ const listaDeQuestoes = [
     enunciado:
       "Durante uma aula de arqueologia, Maria encontrou uma placa com o número 4.067. O professor pediu que ela escrevesse a decomposição aditiva desse número. Qual das opções abaixo está correta?",
     alternativas: [
-      "4.000 + 60 + 7",
       "4.000 + 600 + 70",
       "4.000 + 600 + 7",
       "4.000 + 60 + 70",
+      "4.000 + 60 + 7",
     ],
-    resposta: 1,
+    resposta: 4,
     nivel: 1,
     imagem: null,
   },
@@ -138,12 +124,12 @@ const listaDeQuestoes = [
     enunciado:
       "Em uma gincana escolar, Pedro precisa representar o número 8.239 de forma decomposta para ganhar pontos. Qual das opções abaixo ele deve escolher?",
     alternativas: [
-      "8.000 + 200 + 30 + 9",
       "8.000 + 2.000 + 30 + 9",
       "800 + 200 + 30 + 9",
+      "8.000 + 200 + 30 + 9",
       "80 + 2 + 3 + 9",
     ],
-    resposta: 1,
+    resposta: 3,
     nivel: 1,
     imagem: null,
   },
@@ -179,12 +165,12 @@ const listaDeQuestoes = [
     enunciado:
       "Para solucionar um enigma, Luiza precisa decompor o número 8.239 de forma multiplicativa. Qual opção está correta?",
     alternativas: [
-      "8 × 1.000 + 2 × 100 + 3 × 10 + 9 × 1",
       "8 × 100 + 2 × 10 + 3 × 1 + 9 × 1",
+      "8 × 1.000 + 2 × 100 + 3 × 10 + 9 × 1",
       "80 × 10 + 2 × 100 + 3 × 10 + 9 × 1",
       "8 × 1.000 + 20 × 100 + 3 × 10 + 9 × 1",
     ],
-    resposta: 1,
+    resposta: 2,
     nivel: 1,
     imagem: null,
   },
@@ -298,7 +284,7 @@ function checkAnswer(alternativa) {
   //   selectQuestions();
   // }
 
-  if (erros >= 3) {
+  if (erros >= 10) {
     pontos = 0;
     erros = 0;
   }
