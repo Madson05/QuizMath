@@ -195,7 +195,7 @@ const listaDeQuestoes = [
   {
     enunciado:
       "Um pássaro pousou no galho numerado 1.236. Esse galho fica entre dois outros galhos numerados. Quais são esses números?",
-    alternativas: ["1.233", "1.234", "1.236", "1.238"],
+    alternativas: ["1.233 e 1234", "1.235 e 1237", "1.236 e 1239", "1.238 e 1236"],
     resposta: 2,
     nivel: 1,
     imagem: null,
