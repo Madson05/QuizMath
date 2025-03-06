@@ -1,201 +1,148 @@
 const listaDeQuestoes = [
+  // 5 Questoes sobre numeros egipcios
   {
     enunciado:
-      "Qual é o nome do sistema de numeração que utilizamos atualmente?",
-    alternativas: [
-      "Sistema romano",
-      "Sistema maia",
-      "Sistema indo-arábico",
-      "Sistema babilônico",
-      "Sistema egípcio",
-    ],
-    resposta: 3,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Quantos símbolos (algarismos) são utilizados no sistema de numeração decimal?",
-    alternativas: ["8", "9", "10", "11", "12"],
-    resposta: 3,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Por que o sistema de numeração que utilizamos é chamado de decimal?",
-    alternativas: [
-      "Porque foi criado há dez séculos",
-      "Porque utiliza dez símbolos diferentes e agrupa os elementos de 10 em 10",
-      "Porque representa os numeros de 1 a 10",
-      "Porque foi criado por dez matemáticos",
-      "Porque só pode representar números até 10",
-    ],
+      "No sistema de numeração egípcio, qual símbolo representa o número 1?",
+    alternativas: ["Uma espiral", "Um bastão", "Um círculo", "Uma cobra"],
     resposta: 2,
     nivel: 1,
     imagem: null,
   },
   {
     enunciado:
-      "Qual é a função do algarismo 0 (zero) no sistema de numeração decimal?",
+      "Qual é a representação do número 10 no sistema de numeração egípcio?",
+    alternativas: ["Um calcanhar", "Uma espiral", "Uma cobra", "Um triângulo"],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+
+  {
+    enunciado:
+      "Qual é a representação do número 100 no sistema de numeração egípcio?",
     alternativas: [
-      "Representar o infinito",
-      "Indicar o início de um número",
-      "Separar a parte inteira da decimal",
-      "Indicar as ordens vazias",
-      "Multiplicar o valor dos outros algarismos",
+      "Um bastão",
+      "Uma espiral",
+      "Uma cobra",
+      "Uma corda enrolada",
     ],
+    resposta: 4,
+    nivel: 1,
+    imagem: null,
+  },
+
+  {
+    enunciado:
+      "Qual é a representação do número 1000 no sistema de numeração egípcio?",
+
+    alternativas: [
+      "Uma flor de lótus",
+      "Uma espiral",
+      "Uma cobra",
+      "Uma corda enrolada",
+    ],
+    resposta: 1,
+    nivel: 1,
+    imagem: null,
+  },
+  // 5 Questoes sobre numeros romanos
+
+  {
+    enunciado: "Qual é o número que representa o algarismo romano L?",
+    alternativas: ["5", "10", "15", "50"],
     resposta: 4,
     nivel: 1,
     imagem: null,
   },
   {
     enunciado:
-      "O que significa dizer que os algarismos têm valor posicional no sistema decimal?",
-    alternativas: [
-      "Que cada algarismo só pode ser usado uma vez",
-      "Que os algarismos devem ser escritos em ordem crescente",
-      "Que um mesmo algarismo representa valores diferentes conforme sua posição",
-      "Que os algarismos maiores têm mais valor que os menores",
-      "Que a posição dos algarismos não importa",
-    ],
+      "Enquanto assistia o filme da Marvel (Avengers: Ultimato), João percebeu que nos pós créditos havia um número romano que simbolizava o ano de lançamento do filme. Qual o numero visto, sabendo que o filme foi lançado em 2019?",
+    alternativas: ["MMXV", "MMXVIII", "MMXIX", "MMXX"],
     resposta: 3,
     nivel: 1,
     imagem: null,
   },
+
   {
     enunciado:
-      "No sistema de numeração decimal, como são feitos os agrupamentos?",
-    alternativas: [
-      "De 5 em 5",
-      "De 2 em 2",
-      "De 10 em 10",
-      "De 100 em 100",
-      "De 20 em 20",
-    ],
-    resposta: 3,
+      "Enquanto Maria estudava para a prova de história, ela se deparou com o numero romano MXMIV. Qual o valor desse número?",
+    alternativas: ["1994", "1999", "2004", "2009"],
+    resposta: 1,
     nivel: 1,
     imagem: null,
   },
+
   {
-    enunciado: "Qual é a origem do sistema de numeração indo-arábico?",
-    alternativas: [
-      "Foi criado na China e aperfeiçoado pelos romanos",
-      "Foi criado na Índia e aperfeiçoado pelos árabes",
-      "Foi criado na Grécia e aperfeiçoado pelos egípcios",
-      "Foi criado na Arábia e aperfeiçoado pelos indianos",
-      "Foi criado na Europa e aperfeiçoado pelos asiáticos",
-    ],
-    resposta: 2,
+    enunciado:
+      "Em uma prova de matemática, João foi questionado sobre o valor do algarismo romano D. Qual o valor do algarismo D?",
+    alternativas: ["500", "50", "5", "1000"],
+    resposta: 1,
     nivel: 1,
     imagem: null,
   },
+
+  // 3 questoes sobre o sistema decimal
+
   {
-    enunciado:
-      "Qual é o nome dado aos símbolos utilizados para compor os números no sistema decimal?",
-    alternativas: ["Números", "Dígitos", "Algarismos", "Letras", "Caracteres"],
-    resposta: 3,
-    nivel: 1,
-    imagem: null,
-  },
-  // Questões sobre Decomposição Aditiva
-  {
-    enunciado:
-      "João encontrou um baú antigo com um código numérico de 325. Para abrir o baú, ele precisa escrever a decomposição aditiva correta desse número. Qual é a opção correta?",
-    alternativas: ["300 + 2 + 5", "300 + 20 + 5", "30 + 20 + 5", "3 + 2 + 5"],
-    resposta: 2,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Durante uma aula de arqueologia, Maria encontrou uma placa com o número 4.067. O professor pediu que ela escrevesse a decomposição aditiva desse número. Qual das opções abaixo está correta?",
-    alternativas: [
-      "4.000 + 600 + 70",
-      "4.000 + 600 + 7",
-      "4.000 + 60 + 70",
-      "4.000 + 60 + 7",
-    ],
+    enunciado: "Qual o valor do algarismo 5 no numero 5678?",
+    alternativas: ["500", "50", "5", "5000"],
     resposta: 4,
     nivel: 1,
     imagem: null,
   },
+
   {
     enunciado:
-      "Em uma gincana escolar, Pedro precisa representar o número 8.239 de forma decomposta para ganhar pontos. Qual das opções abaixo ele deve escolher?",
-    alternativas: [
-      "8.000 + 2.000 + 30 + 9",
-      "800 + 200 + 30 + 9",
-      "8.000 + 200 + 30 + 9",
-      "80 + 2 + 3 + 9",
-    ],
-    resposta: 3,
+      "Em uma prova de matemática, Maria foi questionada sobre o valor do algarismo 8 no numero 3286. Qual o valor do algarismo 8?",
+    alternativas: ["800", "80", "8", "8000"],
+    resposta: 1,
     nivel: 1,
     imagem: null,
   },
 
-  // Questões sobre Decomposição Multiplicativa
+  // 2 questoes soobre o sistema indo-arabico
+
   {
-    enunciado:
-      "Um robô precisa decifrar o código numérico 325 usando a decomposição multiplicativa. Qual é a forma correta dessa decomposição?",
-    alternativas: [
-      "3 × 100 + 2 × 10 + 5 × 1",
-      "30 × 10 + 2 × 5 + 5 × 1",
-      "3 × 10 + 2 × 10 + 5 × 1",
-      "300 × 1 + 20 × 1 + 5 × 1",
-    ],
-    resposta: 1,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Em uma competição de matemática, os participantes devem decompor o número 4.067 utilizando a multiplicação. Qual é a opção correta?",
-    alternativas: [
-      "4 × 1.000 + 6 × 10 + 7 × 1",
-      "4 × 1.000 + 60 × 10 + 7 × 1",
-      "4 × 100 + 6 × 10 + 7 × 1",
-      "4 × 1.000 + 6 × 100 + 7 × 10",
-    ],
-    resposta: 1,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Para solucionar um enigma, Luiza precisa decompor o número 8.239 de forma multiplicativa. Qual opção está correta?",
-    alternativas: [
-      "8 × 100 + 2 × 10 + 3 × 1 + 9 × 1",
-      "8 × 1.000 + 2 × 100 + 3 × 10 + 9 × 1",
-      "80 × 10 + 2 × 100 + 3 × 10 + 9 × 1",
-      "8 × 1.000 + 20 × 100 + 3 × 10 + 9 × 1",
-    ],
+    enunciado: "No numero 3286, qual o valor do algarismo 8?",
+    alternativas: ["800", "80", "8", "8000"],
     resposta: 2,
     nivel: 1,
     imagem: null,
   },
 
-  // Questões sobre Sucessor e Antecessor
   {
     enunciado:
-      "Lucas está subindo uma escada e percebe que está no degrau 499. Para chegar ao próximo degrau, qual será o número que ele encontrará?",
-    alternativas: ["498", "499", "500", "501"],
-    resposta: 3,
-    nivel: 1,
-    imagem: null,
-  },
-  {
-    enunciado:
-      "Durante um jogo de tabuleiro, Ana percebe que está na casa 700. Seu amigo estava na casa anterior. Qual era a casa onde ele estava?",
-    alternativas: ["698", "699", "700", "701"],
+      "Em uma prova de matemática, Maria foi questionada sobre o valor do algarismo 5 no numero 5678. Qual o valor do algarismo 5?",
+    alternativas: ["500", "50", "5", "5000"],
     resposta: 2,
     nivel: 1,
     imagem: null,
   },
+
+  // 3 questoes sobre o sistema binario
+
   {
     enunciado:
-      "Um pássaro pousou no galho numerado 1.236. Esse galho fica entre dois outros galhos numerados. Quais são esses números?",
-    alternativas: ["1.233 e 1234", "1.235 e 1237", "1.236 e 1239", "1.238 e 1236"],
+      "Enquanto a aluna Malu realizava um exercicio de programação de computadores, ela se deparou com o numero binario 1010. Qual o valor desse numero?",
+    alternativas: ["5", "10", "15", "20"],
+    resposta: 2,
+    nivel: 1,
+    imagem: null,
+  },
+
+  {
+    enunciado:
+      "Para resolver um problema de lógica, João precisava converter o numero 48 para binario. Qual o valor encontrado por João?",
+    alternativas: ["1010", "1100", "110000", "1000"],
+    resposta: 3,
+    nivel: 1,
+    imagem: null,
+  },
+
+  {
+    enunciado:
+      "Em determinado problema de matemática elaborado pelo professor, a aluna Maria precisava converter o numero 1001 para decimal e depois soma-lo pelo valor obtido na conversão do numero 1010 para decimal. Qual o valor da soma?",
+    alternativas: ["18", "19", "20", "21"],
     resposta: 2,
     nivel: 1,
     imagem: null,
